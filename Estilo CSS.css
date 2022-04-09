@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*calcular el ancho y alto total de un elemento  */
+}
+
+/* Encabezado  */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagenes-indice/Gif/gr.gif);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 96%, 0 80%);
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+
+.nav {
+    width: 100%;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffff;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #ffff;
+    color: #000;
+    border-radius: 15px;
+}
+
+/*----------------- Fin encabezado---------------  */
+
+/* Productos */
+
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+section h2 {
+    width: 100%;
+    color: rgb(2, 39, 13);
+    font-family: monospace;
+    padding: 60px 0;
+}
+
+.titulo {
+    color: hsl(151, 46%, 31%);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 33.333333%;
+    height: 30%;
+}
+
+/*Descuento*/
+.procutos-desc {
+    font-family: sans-serif;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+
+.procutos-desc .img-container {
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.procutos-desc .img-container img {
+    width: 105%;
+    position: absolute;
+    top: -60%;
+    transition: all 0.5s;
+}
+
+.procutos-desc:hover .img-container img {
+    transform: scale(1.2);
+}
+
+.procutos-desc .img-container .promo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: hsl(60, 100%, 50%);
+    padding: 15px;
+    color: black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.procutos-desc .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.procutos-desc .info-container h3 {
+    margin: 0;
+}
+
+.procutos-desc .info-container h3,
+.procutos-desc .info-container strong,
+.procutos-desc .info-container span {
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.procutos-desc .add-car {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.procutos-desc .add-car:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+/* Pie de pagina */
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #12e7f2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
